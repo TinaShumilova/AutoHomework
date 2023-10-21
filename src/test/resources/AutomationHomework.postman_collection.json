@@ -1,0 +1,1158 @@
+{
+	"info": {
+		"_postman_id": "284d41eb-31dd-45cd-8cd0-a70d0b80d8ea",
+		"name": "AutomationHomework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23740591"
+	},
+	"item": [
+		{
+			"name": "Admin Area List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LocalizedType\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Aglonas novads\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/adminareas/LV",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"adminareas",
+						"LV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Body contains Europe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Region\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Europe\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/regions",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Region Europe contains Latvia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Country\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Latvia\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/countries/EUR",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"countries",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Cities List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Cities contains\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Dhaka\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/topcities/50",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"topcities",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autocomplete search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Find Country\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Latvia\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=Riga",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"autocomplete"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Riga"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City Neighbors by locationKey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Riga Neighbor\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Pinki\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/cities/neighbors/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"neighbors",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by locationKey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LocalizedName\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Rīga\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Day of Daily Forecasts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Forecasts contaains\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Temperature\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/forecasts/v1/daily/1day/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"forecasts",
+						"v1",
+						"daily",
+						"1day",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current Conditions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"WeatherText\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/currentconditions/v1/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"currentconditions",
+						"v1",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current Conditions for Top Cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"WeatherText\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/currentconditions/v1/topcities/50",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"currentconditions",
+						"v1",
+						"topcities",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Daily Indices",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Daily Indices Contains\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Air Conditioning Index\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City Search (results narrowed by countryCode)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"City in Latvia\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Rīga\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/cities/LV/search?q=Riga",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"LV",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Riga"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 Days of Daily Forecasts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/forecasts/v1/daily/5day/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"forecasts",
+						"v1",
+						"daily",
+						"5day",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Index Groups",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Group name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Health API\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/groups",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Day of Daily Index Values for a Group of Indices",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Healthy Heart Fitness Forecast\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/1day/225780/groups/10",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						"1day",
+						"225780",
+						"groups",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Indices in a Specific Group",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Specific Group name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Dust & Dander Forecast\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/groups/10",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						"groups",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Day of Daily Index Values for a Specific Index",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Beach & Pool Forecast\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/1day/225780/10",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						"1day",
+						"225780",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metadata for a Specific Index",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Beach and Pool Forecast description\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The AccuWeather.com Beach and Pool Forecast considers numerous weather and water factors to help predict the conditions you will encounter at the beach or pool.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Day of Daily Index Values for All Indices",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Indoor Activity Forecast\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/indices/v1/daily/1day/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"indices",
+						"v1",
+						"daily",
+						"1day",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alerts by LocationKey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "N4s1GbMCZX1EfRhzXQDGAOSPCH4q5nS6",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/alerts/v1/225780",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"alerts",
+						"v1",
+						"225780"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
