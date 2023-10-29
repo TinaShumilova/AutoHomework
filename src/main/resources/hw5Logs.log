@@ -1,0 +1,156 @@
+597  [main] INFO  org.mortbay.log - Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+599  [main] DEBUG org.mortbay.log - Container Server@2e6a5539 + org.mortbay.thread.QueuedThreadPool@2b76ff4e as threadpool
+602  [main] DEBUG org.mortbay.log - Container Server@2e6a5539 + DelayableSocketConnector@0.0.0.0:8080 as connector
+610  [main] DEBUG org.mortbay.log - Container Server@2e6a5539 + org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+611  [main] DEBUG org.mortbay.log - Container org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} + ServletHandler@6138e79a as handler
+613  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a + com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822 as servlet
+614  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a + (S=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822,[/]) as servletMapping
+617  [main] DEBUG org.mortbay.log - filterNameMap=null
+617  [main] DEBUG org.mortbay.log - pathFilters=null
+617  [main] DEBUG org.mortbay.log - servletFilterMap=null
+617  [main] DEBUG org.mortbay.log - servletPathMap={/=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822}
+617  [main] DEBUG org.mortbay.log - servletNameMap={com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822}
+618  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a - com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822 as servlet
+618  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a - (S=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822,[/]) as servletMapping
+618  [main] DEBUG org.mortbay.log - Container Server@2e6a5539 - org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+618  [main] DEBUG org.mortbay.log - Container Server@2e6a5539 + HandlerCollection@6fb365ed as handler
+618  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a + com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822 as servlet
+618  [main] DEBUG org.mortbay.log - Container ServletHandler@6138e79a + (S=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-1370283822,[/]) as servletMapping
+618  [main] DEBUG org.mortbay.log - Container org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} + ServletHandler@6138e79a as handler
+618  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+618  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+618  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+618  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@6e950bcf{/,null} as handler
+619  [main] DEBUG org.mortbay.log - Container org.mortbay.jetty.servlet.Context@6e950bcf{/,null} + ServletHandler@16414e40 as handler
+620  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + org.mortbay.jetty.servlet.DefaultServlet-2016949136 as servlet
+620  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + (S=org.mortbay.jetty.servlet.DefaultServlet-2016949136,[/__files/*]) as servletMapping
+620  [main] DEBUG org.mortbay.log - filterNameMap=null
+620  [main] DEBUG org.mortbay.log - pathFilters=null
+620  [main] DEBUG org.mortbay.log - servletFilterMap=null
+620  [main] DEBUG org.mortbay.log - servletPathMap={/__files/*=org.mortbay.jetty.servlet.DefaultServlet-2016949136}
+620  [main] DEBUG org.mortbay.log - servletNameMap={org.mortbay.jetty.servlet.DefaultServlet-2016949136=org.mortbay.jetty.servlet.DefaultServlet-2016949136}
+620  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411 as servlet
+620  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + (S=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411,[/]) as servletMapping
+620  [main] DEBUG org.mortbay.log - filterNameMap=null
+621  [main] DEBUG org.mortbay.log - pathFilters=null
+621  [main] DEBUG org.mortbay.log - servletFilterMap=null
+621  [main] DEBUG org.mortbay.log - servletPathMap={/__files/*=org.mortbay.jetty.servlet.DefaultServlet-2016949136, /=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411}
+621  [main] DEBUG org.mortbay.log - servletNameMap={com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411, org.mortbay.jetty.servlet.DefaultServlet-2016949136=org.mortbay.jetty.servlet.DefaultServlet-2016949136}
+635  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860 as filter
+635  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + (F=com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860,[/__files/*],[],2) as filterMapping
+636  [main] DEBUG org.mortbay.log - filterNameMap={com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860=com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860}
+636  [main] DEBUG org.mortbay.log - pathFilters=[(F=com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860,[/__files/*],[],2)]
+637  [main] DEBUG org.mortbay.log - servletFilterMap=null
+637  [main] DEBUG org.mortbay.log - servletPathMap={/__files/*=org.mortbay.jetty.servlet.DefaultServlet-2016949136, /=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411}
+637  [main] DEBUG org.mortbay.log - servletNameMap={com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411, org.mortbay.jetty.servlet.DefaultServlet-2016949136=org.mortbay.jetty.servlet.DefaultServlet-2016949136}
+637  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + com.github.tomakehurst.wiremock.servlet.TrailingSlashFilter-1651262695 as filter
+637  [main] DEBUG org.mortbay.log - Container ServletHandler@16414e40 + (F=com.github.tomakehurst.wiremock.servlet.TrailingSlashFilter-1651262695,[/__files/*],[],15) as filterMapping
+637  [main] DEBUG org.mortbay.log - filterNameMap={com.github.tomakehurst.wiremock.servlet.TrailingSlashFilter-1651262695=com.github.tomakehurst.wiremock.servlet.TrailingSlashFilter-1651262695, com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860=com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860}
+637  [main] DEBUG org.mortbay.log - pathFilters=[(F=com.github.tomakehurst.wiremock.servlet.ContentTypeSettingFilter-12905860,[/__files/*],[],2), (F=com.github.tomakehurst.wiremock.servlet.TrailingSlashFilter-1651262695,[/__files/*],[],15)]
+637  [main] DEBUG org.mortbay.log - servletFilterMap=null
+638  [main] DEBUG org.mortbay.log - servletPathMap={/__files/*=org.mortbay.jetty.servlet.DefaultServlet-2016949136, /=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411}
+638  [main] DEBUG org.mortbay.log - servletNameMap={com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411=com.github.tomakehurst.wiremock.jetty6.Jetty6HandlerDispatchingServlet-883455411, org.mortbay.jetty.servlet.DefaultServlet-2016949136=org.mortbay.jetty.servlet.DefaultServlet-2016949136}
+638  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@2ea6e30c{/__admin,null} as handler
+638  [main] DEBUG org.mortbay.log - Container HandlerCollection@6fb365ed + org.mortbay.jetty.servlet.Context@6e950bcf{/,null} as handler
+651  [main] INFO  hw5.AbstractTest - WiremockServer starts
+662  [main] INFO  hw5.AccuweatherTest - Test test10CurrentConditionsForTopCities starts
+805  [main] DEBUG hw5.AccuweatherTest - Create mock for /currentconditions/v1/topcities/50
+1028 [main] DEBUG hw5.AccuweatherTest - Create http client
+1059 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1066 [main] INFO  hw5.AccuweatherTest - Test test10CurrentConditionsForTopCities passed
+1073 [main] INFO  hw5.AccuweatherTest - Test test1FindNovadsInAdminAreaList starts
+1073 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/adminareas/LV
+1095 [main] DEBUG hw5.AccuweatherTest - Create http client
+1101 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1102 [main] INFO  hw5.AccuweatherTest - Test test1FindNovadsInAdminAreaList passed
+1104 [main] INFO  hw5.AccuweatherTest - Test test3ContriesContainLatvia starts
+1105 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/countries/EUR
+1115 [main] DEBUG hw5.AccuweatherTest - Create http client
+1120 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1121 [main] INFO  hw5.AccuweatherTest - Test test3ContriesContainLatvia passed
+1123 [main] INFO  hw5.AccuweatherTest - Test test11ListOfDailyIndices starts
+1123 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily
+1133 [main] DEBUG hw5.AccuweatherTest - Create http client
+1138 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1139 [main] INFO  hw5.AccuweatherTest - Test test11ListOfDailyIndices passed
+1141 [main] INFO  hw5.AccuweatherTest - Test test18MetadataSpecificIndices starts
+1141 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily
+1150 [main] DEBUG hw5.AccuweatherTest - Create http client
+1155 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1156 [main] INFO  hw5.AccuweatherTest - Test test18MetadataSpecificIndices passed
+1157 [main] INFO  hw5.AccuweatherTest - Test test7SearchByLocationKey starts
+1157 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/225780
+1166 [main] DEBUG hw5.AccuweatherTest - Create http client
+1170 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1171 [main] INFO  hw5.AccuweatherTest - Test test7SearchByLocationKey passed
+1172 [main] INFO  hw5.AccuweatherTest - Test test6RigaNeighbor starts
+1173 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/cities/neighbors/225780
+1181 [main] DEBUG hw5.AccuweatherTest - Create http client
+1186 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1187 [main] INFO  hw5.AccuweatherTest - Test test6RigaNeighbor passed
+1188 [main] INFO  hw5.AccuweatherTest - Test test9CurrentConditions starts
+1188 [main] DEBUG hw5.AccuweatherTest - Create mock for /currentconditions/v1/225780
+1196 [main] DEBUG hw5.AccuweatherTest - Create http client
+1208 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1209 [main] INFO  hw5.AccuweatherTest - Test test9CurrentConditions passed
+1210 [main] INFO  hw5.AccuweatherTest - Test test16ValuesSpecificIndices starts
+1210 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily/groups/10
+1219 [main] DEBUG hw5.AccuweatherTest - Create http client
+1222 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1223 [main] INFO  hw5.AccuweatherTest - Test test16ValuesSpecificIndices passed
+1224 [main] INFO  hw5.AccuweatherTest - Test test2RegionsContainEurope starts
+1225 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/regions
+1233 [main] DEBUG hw5.AccuweatherTest - Create http client
+1236 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1237 [main] INFO  hw5.AccuweatherTest - Test test2RegionsContainEurope passed
+1239 [main] INFO  hw5.AccuweatherTest - Test test15ValuesGroupIndices starts
+1239 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily/1day/225780/groups/10
+1248 [main] DEBUG hw5.AccuweatherTest - Create http client
+1256 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1256 [main] INFO  hw5.AccuweatherTest - Test test15ValuesGroupIndices passed
+1258 [main] INFO  hw5.AccuweatherTest - Test test20AlertsLocationKey starts
+1258 [main] DEBUG hw5.AccuweatherTest - Create mock for /alerts/v1/225780
+1266 [main] DEBUG hw5.AccuweatherTest - Create http client
+1270 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1270 [main] INFO  hw5.AccuweatherTest - Test test20AlertsLocationKey passed
+1272 [main] INFO  hw5.AccuweatherTest - Test test4TopCitiesContainDhaka starts
+1272 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/topcities/50
+1280 [main] DEBUG hw5.AccuweatherTest - Create http client
+1284 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1285 [main] INFO  hw5.AccuweatherTest - Test test4TopCitiesContainDhaka passed
+1287 [main] INFO  hw5.AccuweatherTest - Test test5AutocompleteSearch starts
+1287 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/cities/autocomplete?q=Riga
+1296 [main] DEBUG hw5.AccuweatherTest - Create http client
+1300 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1300 [main] INFO  hw5.AccuweatherTest - Test test5AutocompleteSearch passed
+1302 [main] INFO  hw5.AccuweatherTest - Test test13FiveDaysForecasts starts
+1302 [main] DEBUG hw5.AccuweatherTest - Create mock for /forecasts/v1/daily/5day/225780
+1310 [main] DEBUG hw5.AccuweatherTest - Create http client
+1315 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1315 [main] INFO  hw5.AccuweatherTest - Test test13FiveDaysForecasts passed
+1316 [main] INFO  hw5.AccuweatherTest - Test test19OneDayForAllIndices starts
+1316 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily/1day/225780
+1326 [main] DEBUG hw5.AccuweatherTest - Create http client
+1329 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1330 [main] INFO  hw5.AccuweatherTest - Test test19OneDayForAllIndices passed
+1332 [main] INFO  hw5.AccuweatherTest - Test test12CitySearchCountryCode starts
+1332 [main] DEBUG hw5.AccuweatherTest - Create mock for /locations/v1/cities/LV/search?q=Riga
+1340 [main] DEBUG hw5.AccuweatherTest - Create http client
+1343 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1344 [main] INFO  hw5.AccuweatherTest - Test test12CitySearchCountryCode passed
+1345 [main] INFO  hw5.AccuweatherTest - Test test17OneDayValuesSpecificIndices starts
+1346 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily/1day/225780/10
+1355 [main] DEBUG hw5.AccuweatherTest - Create http client
+1358 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1359 [main] INFO  hw5.AccuweatherTest - Test test17OneDayValuesSpecificIndices passed
+1361 [main] INFO  hw5.AccuweatherTest - Test test14ListIndexGroups starts
+1361 [main] DEBUG hw5.AccuweatherTest - Create mock for /indices/v1/daily/groups
+1369 [main] DEBUG hw5.AccuweatherTest - Create http client
+1373 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1374 [main] INFO  hw5.AccuweatherTest - Test test14ListIndexGroups passed
+1375 [main] INFO  hw5.AccuweatherTest - Test test8DailyForecasts starts
+1375 [main] DEBUG hw5.AccuweatherTest - Create mock for /forecasts/v1/daily/1day/225780
+1381 [main] DEBUG hw5.AccuweatherTest - Create http client
+1386 [main] DEBUG hw5.AccuweatherTest - Start assertions
+1386 [main] INFO  hw5.AccuweatherTest - Test test8DailyForecasts passed
+1491 [main] INFO  hw5.AbstractTest - WiremockServer stops
